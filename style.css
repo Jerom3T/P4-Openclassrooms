@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 a,
@@ -39,10 +40,31 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
+.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
 }
+.row2 p{
+    padding-bottom: 5px;
+}
+    
+.reseaux{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+
+}
+.col-sm-3{
+    width: 50px;
+}
+
+.text-center{
+
+
+}
+
 
 .bloc-lg {
     padding: 100px 50px;
@@ -305,8 +327,10 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
-    margin: 0 5px 0 0;
-    display: inline;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
 
 .navbar-brand img[src$=svg] {
@@ -323,12 +347,21 @@ a:hover {
     float: right;
     z-index: 1;
 }
-
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type : none;
+    padding-right: 100px;
+  }
 .nav > li {
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
+a {
+text-decoration:none;
+}
+
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
@@ -352,6 +385,33 @@ a:hover {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
 }
+#form_1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 20px 20px 0px;
+}
+label{
+    padding-bottom: 10px;
+    font-size: 17px;
+    width: 100%;
+}
+input{
+    height: 25px;
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 10px;
+}
+.col-sm-6 p{
+    font-size: 15px;
+}
 
 .nav-invert .navbar .nav {
     float: left;
@@ -368,7 +428,7 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 75px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -385,6 +445,9 @@ a:hover {
     }
     .nav-center .navbar-header {
         width: 100%;
+    }
+    .navbar-header img{
+        margin-left: 5px;
     }
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
@@ -699,18 +762,51 @@ p {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    width: 25%;
+    border-radius: 20px;
+}
+.quote {
+    font-size: 20px;
+    font-style: italic
+}
+.text{
+    font-size: 20px;
+}
+.explain p{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.row3{
+    display: flex;
+    justify-content: center;
+}
+.row3 h3{
+    display: flex;
+    justify-content: center;
+}
+.col-sm-4footer ul{
+    display: flex;
 }
 .col-sm-4footer{
     display: flex;
+    flex-direction: column;
+}
+.col-sm-4footer ul{
+    display: flex;
     justify-content: center;
-    flex-direction: row;
-
+    gap: 20px;
 }
 .row2{
     padding-top: 50px ;
     display: flex;
     justify-content: center;
-
+}
+.row2 p{
+    font-size: 20px;
 }
 
 .social {
@@ -790,7 +886,17 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
+    font-size: 18px;
 }
+.title h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    font-size: 30px;
+}
+
 
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -1047,6 +1153,12 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .col-sm-4footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 }
 
 @media (max-width: 767px) {
