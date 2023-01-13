@@ -60,12 +60,6 @@ a:hover {
     width: 50px;
 }
 
-.text-center{
-
-
-}
-
-
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -767,10 +761,20 @@ p {
 }
 .quote {
     font-size: 20px;
-    font-style: italic
+    font-style: italic;
+    padding: 10px;
 }
 .text{
     font-size: 20px;
+    padding: 10px;
+
+}
+.explain {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 22px;
+    padding: 10px;
 }
 .explain p{
     display: flex;
@@ -1166,3 +1170,14 @@ h4 {
         text-align: center;
     }
 }
+
+@media (min-width: 350px){
+    a[data-lightbox] {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
