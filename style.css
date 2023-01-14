@@ -763,6 +763,7 @@ p {
     font-size: 20px;
     font-style: italic;
     padding: 10px;
+    font-weight: bold;
 }
 .text{
     font-size: 20px;
@@ -783,7 +784,10 @@ p {
     font-size: 22px;
     padding: 10px;
 }
-
+label{
+    display: flex;
+    flex-direction: column;
+}
 .row3{
     display: flex;
     justify-content: center;
@@ -791,6 +795,9 @@ p {
 .row3 h3{
     display: flex;
     justify-content: center;
+}
+.bloc-lg{
+    padding-top: 10px;
 }
 .col-sm-4footer ul{
     display: flex;
