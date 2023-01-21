@@ -400,6 +400,7 @@ button {
     border-color:rgba(0,0,0,.1);
     border-radius:25px;
     box-shadow:none;
+    width: 300px;
 }
 .scrollToTop {
     width:40px;
